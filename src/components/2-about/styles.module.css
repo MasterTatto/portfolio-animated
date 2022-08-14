@@ -1,0 +1,19 @@
+.icon {
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 0);
+}
+
+.img {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: #04C2C9;
+    background-image: url("/src/assets/me.jpg");
+    background-size: cover;
+    background-position: -45px center;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(75% 93.30127%, 100% 50%, 75% 6.69873%, 25% 6.69873%, 0% 50%, 25% 93.30127%);
+    clip-path: polygon(75% 93.30127%, 100% 50%, 75% 6.69873%, 25% 6.69873%, 0% 50%, 25% 93.30127%);
+}
+

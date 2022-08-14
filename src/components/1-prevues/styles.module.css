@@ -1,0 +1,8 @@
+.btn:hover svg {
+    transform: rotate(90deg);
+}
+
+.canva{
+    position: absolute !important;
+    height: 50px !important;
+}

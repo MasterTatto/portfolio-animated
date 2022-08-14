@@ -1,0 +1,69 @@
+
+.polygon::after {
+    font: 32px sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.polygon {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+}
+
+.borders .polygon {
+    position: relative;
+    height: 160px;
+    width: 160px;
+}
+
+.borders .polygon div {
+    /* + 1.5 to account for anti-aliasing */
+    border-top: 64px solid #04C2C9;
+    border-left: 37.95042px solid transparent;
+    border-right: 37.95042px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 50% 100%;
+}
+
+.borders .polygon div:nth-child(0) {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.borders .polygon div:nth-child(1) {
+    transform: translate(-50%, -100%) rotate(60deg);
+}
+
+.borders .polygon div:nth-child(2) {
+    transform: translate(-50%, -100%) rotate(120deg);
+}
+
+.borders .polygon div:nth-child(3) {
+    transform: translate(-50%, -100%) rotate(180deg);
+}
+
+.borders .polygon div:nth-child(4) {
+    transform: translate(-50%, -100%) rotate(240deg);
+}
+
+.borders .polygon div:nth-child(5) {
+    transform: translate(-50%, -100%) rotate(300deg);
+}
+
+.borders .polygon div:nth-child(6) {
+    transform: translate(-50%, -100%) rotate(360deg);
+}
+
+.clippaths .polygon {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    background: #04C2C9;
+    -webkit-clip-path: polygon(75% 93.30127%, 100% 50%, 75% 6.69873%, 25% 6.69873%, 0% 50%, 25% 93.30127%);
+    clip-path: polygon(75% 93.30127%, 100% 50%, 75% 6.69873%, 25% 6.69873%, 0% 50%, 25% 93.30127%);
+}
